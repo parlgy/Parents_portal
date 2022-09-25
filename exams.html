@@ -22,26 +22,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title></title>
   </head>
   <body class="text-blueGray-700 antialiased">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <nav
-        class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6"
-      >
-        <div
-          class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto"
-        >
-          <button
-            class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
-            type="button"
-            onclick="toggleNavbar('example-collapse-sidebar')"
-          >
-            <i class="fas fa-bars"></i></button
-          >
-          
-          
+      <nav class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
+        <div class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
+          <button class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
+            type="button" onclick="toggleNavbar('example-collapse-sidebar')">
+            <i class="fas fa-bars"></i></button>    
           <div
             class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded hidden"
             id="example-collapse-sidebar"
@@ -71,27 +62,38 @@
                 />
               </div>
             </form>
-            <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+ 
+            <div class="flex justify-center items-center mb-4">
+                <img class="object-cover w-16 h-16 rounded-full shadow p-1" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+                <p class="px-4">Joseph Kamau</p>
+            </div>
+
+            <ul class="md:flex-col md:min-w-full flex flex-col list-none mt-16">                
+                
               <li class="items-center">
-                <a
-                  class=" text-xs uppercase py-3 font-bold block"
-                  href="/index.html"
-                  ><i class="fas fa-tv opacity-75 mr-2 text-sm"></i>
-                  Dashboard</a
-                >
+                <a class=" text-blueGray-700 hover:text-blueGray-500 text-lg py-3 font-semibold block"
+                  href="/index.html">
+                  <i class="fas fa-tv opacity-75 mr-2 text-lg"></i>
+                  Dashboard</a>
               </li>
-              <li class="items-center">
-                <a class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+              <li class="items-center py-2">
+                <a class="text-blueGray-700 hover:text-blueGray-500 text-lg py-3 font-semibold block"
                   href="/fees.html">
-                  <i class="fas fa-newspaper text-blueGray-400 mr-2 text-sm"></i>Fees</a>
+                  <i class="fa-solid fa-sack-dollar text-lg opacity-75 mr-2 "></i>Fees</a>
               </li>
-              <li class="items-center">
+              <li class="items-center   ">
                 <a
-                  class="text-blue-500 hover:text-blue-600 text-xs uppercase py-3 font-bold block"
+                  class="text-blue-500 hover:text-blue-600 text-lg py-3 font-semibold block"
                   href="/exams.html"
-                  ><i class="fas fa-newspaper text-blueGray-400 mr-2 text-sm"></i>
+                  ><i class="fas fa-newspaper text-blue-500 mr-2 text-lg"></i>
                   Examination</a
                 >
+              </li>
+              <li class="items-center   ">
+                <a class="text-blueGray-700 hover:text-blueGray-500 text-lg py-3 font-semibold block"
+                  href="/exams.html">
+                  <i class="fa-solid fa-circle-info text-lg opacity-75 mr-2 "></i></i>
+                  About</a>
               </li>
               
             </ul>
@@ -102,39 +104,42 @@
       <div class="relative md:ml-64 bg-blueGray-50">
       
         <!-- Header -->
-        
+        <div class="flex justify-evenly items-center p-8">
+            <h1 class="text-2xl font-bold relative w-full px-4 max-w-full flex-grow flex-1 text-left mt-16">Unit Results</h1>
+            <div class="">
+                <a href="/" class="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded-full shadow-md hover:text-deep-purple-900 bg-blue-500 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none">
+                  Print
+                </a>
+              </div>
+        </div>
         <div class="px-4 md:px-10 mx-auto w-full">
           <div class="">
-            
           <div class="flex flex-wrap pt-16">
             <div class="w-full xl:w-2/12 mb-12 xl:mb-0 px-4">
               <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-sm rounded">
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
-                  <div class="flex flex-wrap items-center">
+                <div class="flex justify-center">
+                <img src="/assets/img/logo.png" alt="" class="" style="height: 250px;">
+            </div>
+                  <div class="items-center">
                     <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-                        <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                        </p>
-                        <h2 class="font-sans text-2xl tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                        <!-- <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                        </p> -->
+                        <h2 class="font-sans text-2xl tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">
                           BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY
                         </h2>
-                        <h2 class="mb-5 font-sans text-2xl tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                        <h2 class="mb-5 font-sans text-2xl tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">
                           JOSEPH KAMAU KAMAU<br class="hidden md:block" />
                           SIT/B/1-01592/2019
                         </h2>
                       </div>
-                    <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                        <i class="fa-solid fa-ticket "></i>
-                      <button class="bg-indigo-500 display-none text-white active:bg-indigo-600 text-lg px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
-                        type="button" style="transition:all .15s ease">Print</button>
-
-                    </div>
                   </div>
                 </div>
                 <div class="block w-full overflow-x-auto">
                   <!-- Projects table -->
                  
                   <table class="items-center w-full bg-transparent border-collapse">
-                    <h1 class="font-bold p-5 text-lg text-blue-500">Semester 1</h1>
+                    <h1 class="font-semibold p-5 text-lg text-blue-500">Semester 1</h1>
                     <thead>
                       <tr>
                         <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
@@ -146,9 +151,9 @@
                         <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                           Grade
                         </th>
-                        <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        <!-- <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                          Hours
-                        </th>
+                        </th> -->
                       </tr>
                     </thead>
 
@@ -163,9 +168,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45 
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left">
@@ -177,9 +182,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                            B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45
-                        </td>
+                        </td> -->
                        
                       </tr>
                       <tr>
@@ -192,9 +197,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           A
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45
-                        </td>
+                        </td> -->
                         
                       </tr>
                       <tr>
@@ -207,9 +212,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           A
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45
-                        </td>
+                        </td> -->
                         
                       </tr>
                       <tr>
@@ -222,9 +227,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           A
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45 
-                        </td>
+                        </td> -->
                       </tr>
 
                       <tr>
@@ -237,9 +242,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45 
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left">
@@ -251,9 +256,9 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           C
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left">
@@ -265,14 +270,14 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
+                        <!-- <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           45
-                        </td>
+                        </td> -->
                       </tr>
                     </tbody>
                   </table>
                   <table class="items-center w-full bg-transparent border-collapse">
-                    <h1 class="font-bold p-5 text-lg">Semester 2</h1>
+                    <h1 class="font-semibold p-5 text-lg text-blue-500">Semester 2</h1>
                     <thead>
                       <tr>
                         <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
@@ -284,9 +289,7 @@
                         <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                           Grade
                         </th>
-                        <th class="px-6 bg-blueGray-200 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-lg uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                         Hours
-                        </th>
+                        
                       </tr>
                     </thead>
 
@@ -301,9 +304,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45 
-                        </td>
+                        
                       </tr>
                       <tr>
                         <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left">
@@ -315,9 +316,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                            B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45
-                        </td>
+                        
                        
                       </tr>
                       <tr>
@@ -330,9 +329,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           A
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45
-                        </td>
+                        
                         
                       </tr>
                       <tr>
@@ -345,9 +342,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           A
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45
-                        </td>
+                        
                         
                       </tr>
                       <tr>
@@ -360,9 +355,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           A
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45 
-                        </td>
+                        
                       </tr>
 
                       <tr>
@@ -375,9 +368,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45 
-                        </td>
+                        
                       </tr>
                       <tr>
                         <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left">
@@ -389,9 +380,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           C
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45
-                        </td>
+                       
                       </tr>
                       <tr>
                         <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left">
@@ -403,9 +392,7 @@
                         <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
                           B
                         </td>
-                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4">
-                          45
-                        </td>
+                        
                       </tr>
                     </tbody>
                   </table>
